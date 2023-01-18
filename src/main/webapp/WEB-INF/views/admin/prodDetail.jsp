@@ -53,7 +53,7 @@
 		</div>
 		<hr>
 		<div class="row" style="float: left; text-align: center; width:35%;">
-			<img alt="pimage1" src="../resources/images/bed01.jpg" width="110%"> 
+			<img alt="pimage1" src="../resources/images/${pcontents.pimage1}" width="110%"> 
 		</div>
 		
 		<div class="row-pcontents" style="width:55%; float:right;" >
@@ -142,44 +142,11 @@
 			<c:param name="pnum" value="${pcontents.pnum}" />
 		</c:import>		
 	<hr color='red'>	
-								<!-- 상품평 게시판 페이지 -->
-		<div class="row reviews" style="margin-top: 100px; text-align:center;">
-			<h4 class="page-header">Review&nbsp;&nbsp;<small>상품을 사용해보신 분들의 실제 후기입니다.</small></h4>
-			<table class="table table-hover">
-				<thead>
-					<tr>
-						<th>번호</th>
-						<th>제목</th>
-						<th>작성자</th>
-						<th>작성일</th>
-						<th>조회수</th>
-					</tr>
-				</thead>
-				<tbody>
-					<c:forEach items="${content}" var="board" varStatus="status">
-						<tr>
-							<td>1</td> <%-- ${content.num} --%>
-							<td><a>바게보 수납장 문의합니다 ~ ★</a></td> <%-- href="${content.boardId}" --%>
-							<td>김xx</td>
-							<td><fmt:formatDate value="${content.wdate}" type="date"
-								pattern="yyyy-MM-dd"/></td>
-							<td>0</td>  <%-- ${content.viewCnt} --%>
-						</tr>
-					</c:forEach>
-				</tbody>
-				<tfoot>
-				<!-- 	<tr><td style = "background:beige colspan ="6" class = "col-md-10 text-right">
-					<a href = "reviewWrite"><button  class = "btn btn-revwrite">글 쓰기</button>
-					</a></td></tr>
-					<tr><td colspan = "6"><div class = "col-md 10 text-left">
-					<form name = "searchF" action = "list" onsubmit = "return check()">
-						<input type = "hidden" name = "findType2" value = "1">
-						<input type = "hidden" name = "cpage" value = "2">
-					</form></div></td></tr>
-					<tr></tr> -->
-				</tfoot>
-			</table>
-		</div>		
+								<!-- 리뷰 페이지 -->
+		<c:import url="/reviewForm">
+			<c:param name="pnum" value="${pcontents.pnum}"/>
+		</c:import>
+				
 		</div>	
 	</div>
 			</div>

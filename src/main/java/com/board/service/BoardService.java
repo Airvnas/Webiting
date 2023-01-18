@@ -20,7 +20,8 @@ public interface BoardService {
 	int getTotalCount(PagingVO paging);//검색한 총 게시글 수 가져오기
 
 	// 글번호에 해당하는 글 가져오기
-	BoardVO selectBoardByIdx(Integer idx);   
+	BoardVO selectBoardByIdx(Integer idx);
+	
 	// 조회수 증가하기
 	int updateReadnum(Integer idx);
 	   

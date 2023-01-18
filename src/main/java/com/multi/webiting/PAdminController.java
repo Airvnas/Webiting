@@ -126,6 +126,7 @@ public class PAdminController {
 			} // for---------------
 			/* log.info("업로드 이후 product===" + product); */
 		}
+		
 		int n = adminService.productInsert(product);
 		String str = (n > 0) ? "상품등록 성공" : "등록 실패";
 		String loc = (n > 0) ? "prodList" : "javascript:history.back()";

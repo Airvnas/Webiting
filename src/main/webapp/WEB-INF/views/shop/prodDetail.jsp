@@ -107,7 +107,7 @@
 
             </table>
          </div>
-      </div><!--.row end  -->
+      </div>
       <!-- 리뷰 글쓰기 폼 -------------------------------------------- -->
       <div class="row mt-4">
       	<div class="col-md-10 offset-md-1">
@@ -129,10 +129,7 @@
 	  	<div class="col-md-10 offset-md-1">      
       <!-- 리뷰 수정 모달------------------------------------------- -->
       <%@ include file="/WEB-INF/views/review/reviewEdit.jsp" %>
-      <!-- ------------------------------------------------------- -->
      	 </div>
       </div>
-	</div><!-- .container end -->
-
-
+	</div>
 <c:import url="/foot" />

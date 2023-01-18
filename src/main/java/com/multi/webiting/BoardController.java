@@ -60,7 +60,7 @@ public class BoardController {
 		ServletContext app=req.getServletContext();
 		String upDir=app.getRealPath("/resources/board_upload");
 		File dir=new File(upDir);
-		log.info(upDir+"-----------------sss---------");
+		/* log.info(upDir+"-----------------sss---------"); */
 		if(!dir.exists()) {
 			dir.mkdirs();//업로드 디렉토리의 경로가 없는 경우 전체를 다 만들어줌
 		}
@@ -198,17 +198,7 @@ public class BoardController {
 		}
 		String str=(n>0)?"삭제 성공":"삭제 실패";
 		String loc=(n>0)?"list":"javascript:history.back()";
+		
 		return util.addMsgLoc(m, str, loc);
-	}
-	
-	
-	
-
-	
-	
-	
-
-	
-	
-	
+	}	
 }

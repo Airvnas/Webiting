@@ -5,11 +5,6 @@
 <!-- 평점 주소 -->
 <link href="/resources/css/star.css" rel="stylesheet"/>
 <c:import url="/top"/>
-
-<!-- <section><h2><em>인기상품</em></h2>
-<br>
-<h4>금주에 가장 많이 팔린 상품!!</h4>
-</section> -->
 	<section class="py-5">
             <div class="container px-4 px-lg-5 mt-5">
                 <div class="row gx-4 gx-lg-5 row-cols-2 row-cols-md-3 row-cols-xl-4 justify-content-center">
@@ -27,23 +22,20 @@
                                     <!-- Product price-->
 									${prod.price}
 										<br>
-									<fieldset>
-										<input type="radio" name="reviewStar" value="5" id="rate1"><label
-											for="rate1">★</label> <input type="radio" name="reviewStar"
-											value="4" id="rate2"><label for="rate2">★</label> <input
-											type="radio" name="reviewStar" value="3" id="rate3"><label
-											for="rate3">★</label> <input type="radio" name="reviewStar"
-											value="2" id="rate4"><label for="rate4">★</label> <input
-											type="radio" name="reviewStar" value="1" id="rate5"><label
-											for="rate5">★</label>
-									</fieldset>
+							<fieldset>
+								<input type="radio" name="reviewStar" value="5" id="rate1"><label for="rate1">★</label>
+								<input type="radio" name="reviewStar" value="4" id="rate2"><label for="rate2">★</label> 
+								<input type="radio" name="reviewStar" value="3" id="rate3"><label for="rate3">★</label> 
+								<input type="radio" name="reviewStar" value="2" id="rate4"><label for="rate4">★</label>
+								<input type="radio" name="reviewStar" value="1" id="rate5"><label for="rate5">★</label>
+							</fieldset>
 								</div>
                             </div>
                             <!-- Product actions-->
                             <div class="card-footer p-4 pt-0 border-top-0 bg-transparent">
-                            <div class="text-center"><a class="btn btn-outline-dark mt-auto" id = "detail"
-                            href="/admin/prodDetail?pnum=${prod.pnum}">prodDetail</a>
-                                </div>
+                            <div class="text-center">
+                            <a class="btn btn-outline-dark mt-auto" href="prodDetail?pnum=${prod.pnum}">prodDetail</a>
+                            </div>
                             </div>
                         </div>
                     </div>

@@ -126,7 +126,7 @@ function check(){
 				<form name="searchF" action="list" onsubmit="return check()">
 					<input type="hidden" name="findType2" value="${paging.findType2}">
 					<input type="hidden" name="cpage" value="${paging.cpage}">
-		<!--  -->	<select name="findType" style="padding: 6px">
+					<select name="findType" style="padding: 6px">
 						<option value="">::검색유형::</option>
 						<option value="1" <c:if test="${paging.findType eq 1}">selected</c:if> >글제목</option>
 						<option value="2" <c:if test="${paging.findType eq 2}">selected</c:if> >작성자</option>

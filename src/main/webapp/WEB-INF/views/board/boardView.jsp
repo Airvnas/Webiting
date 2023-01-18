@@ -3,7 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
-
 <c:import url="/top" />
 <script>
 	$(function() {
@@ -33,10 +32,6 @@
 
 	})//$()end-----------------
 </script>
-<style>
-	
-
-</style>
 <div align="center" id="bbs" class="col-md-8 offset-md-2">
 	<input type="hidden" name="mode" value="write">
 		<!-- 원본글쓰기mode는 write, 답변글쓰기 mode는 rewrite로 감  -->
@@ -177,6 +172,5 @@ function go(flag){
 		reF.submit();
 	}
 }
-	
 </script>
 <c:import url="/foot" />

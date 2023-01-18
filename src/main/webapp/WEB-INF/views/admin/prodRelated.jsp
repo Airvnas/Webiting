@@ -16,8 +16,8 @@
 			<a href="http://localhost:9090/admin/prodRelated/${Relitem.pimage1}">
 				<img src="../resources/images/${Relitem.pimage1}" width = "25%">
 			</a>
-				<p class = "rp">푹신한 침대</p>
-				<strong class = "price">100,0000</strong>
+				<p class ="rp">${Relitme.pname}</p>
+				<strong class = "price">${Relitme.price}</strong>
 				<span class = "unit">원</span>
 			</span>	
 		</c:forEach>	

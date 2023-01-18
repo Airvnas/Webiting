@@ -124,18 +124,6 @@ article {
          <td style="width: 50%">
          <input type="file" name="mfilename" placeholder="첨부파일"
             id="filename" class="form-control">
-           <!--  	<div class = "star-text">평점을 선택해 주세요</div>
-          		<div class="star-rating">
-					<input type="radio" id="5-stars" name="star" value="5" /> <label
-						for="5-stars" class="star">&#9733;</label> <input type="radio"
-						id="4-stars" name="star" value="4" /> <label for="4-stars"
-						class="star">&#9733;</label> <input type="radio" id="3-stars"
-						name="star" value="3" /> <label for="3-stars" class="star">&#9733;</label>
-					<input type="radio" id="2-stars" name="star" value="2" /> <label
-						for="2-stars" class="star">&#9733;</label> <input type="radio"
-						id="1-star" name="star" value="1" /> <label for="1-star"
-						class="star">&#9733;</label>
-					</div> -->
 		</td>
 				</div>
 				

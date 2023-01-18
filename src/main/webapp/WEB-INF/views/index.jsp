@@ -29,7 +29,7 @@ border:10px;
 border-radius:60px;
 border:10px solid #000;
 	}
-a{
+.sale-btn_label{
 color:#ced4da;
 background-color:#212529;
 }
@@ -98,7 +98,7 @@ background-color:#212529;
 										<div><p>IKEA가 준비한 최대50% 마지막 할인 제품을 만나보세요</p></div>
 										<a role="button" class="sale-btn" href = "">
 										<span>
-											<span class ="sale-btn_label" style="display:inline-flex; font-weight:bold;">
+										<span class ="sale-btn_label" style="display:inline-flex; font-weight:bold;">
 											온라인 최대 50% 할인 보러가기</span>
 										</span>
 										</a>
