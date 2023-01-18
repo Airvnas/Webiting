@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.board.mapper.ReviewMapper">
+
+	<insert id="insertReview" parameterType="com.board.model.ReviewVO">
+	<selectKey keyProperty="revnum" resultType="int" order="BEFORE">
+		select review_seq.nextval from dual
+	</selectKey>
+		insert into REV_BOARD(revnum,rtitle,revwriter,content,wdate,revread,star,pnum_fk,filename)
+		values (#{revnum},#{rtitle:VARCHAR},#{revwriter:VARCHAR},#{content:VARCHAR},sysdate,#{revread},#{star},#{pnum_fk}
+		,#{filename:VARCHAR})
+	</insert>
+			<!-- pnum_fk 가 value인 리뷰 리스트 select 쿼리문 -->
+	<select id="getReviewList" resultType="com.board.model.ReviewVO" parameterType="int"> 
+		SELECT * FROM REV_BOARD
+		WHERE PNUM_FK = #{value}
+	</select>
+	
+			<!-- 리뷰 글 확인 페이지 -->
+	<select id="selectReviewByRevNum" resultType="Review" parameterType="int">
+		select * from REV_BOARD where REVNUM =#{value}
+	</select>
+	
+	<select id="selectBypnum" resultType="Review" parameterType="int">
+		select * from REV_BOARD where pnum =#{value}
+	</select>    
+			
+			<!-- 리뷰 글 내용 수정 -->
+	 <update id="editReview" parameterType = "Review">
+		UPDATE  REV_BOARD
+		   SET CONTENT  = #{content},rtitle=#{rtitle} 
+		   <if test="filename!=null and filename!=''">
+		   filename=#{filename}
+		   </if>
+		   WHERE REVNUM = #{revnum}
+	</update> 
+			<!-- 리뷰 글 번호 삭제 -->	
+	<delete id="deleteReview" parameterType = "int">
+		DELETE FROM REV_BOARD WHERE REVNUM = #{value}
+	</delete>  
+	
+	<!-- resultType="com.board.model.ReviewVO" -->
+</mapper>

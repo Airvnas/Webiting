@@ -1,0 +1,77 @@
+@charset "UTF-8";
+.fn-review__star {
+    display: inline-block;
+    width: 115px;
+    padding-top: 1px;
+    padding-left: 1px;
+    vertical-align: middle;
+    text-align: left;
+    font-size: 12px;
+    color: #111;   
+}
+.fn-review_starBtn{
+    position: relative;
+    display: table-cell;
+    width: 228px;
+    vertical-align: middle;
+    background-color: #fff;
+    cursor: pointer;
+    outline: 0;
+}
+
+.fn-review_current {
+    display: inline-block;
+}   
+.fn-review_title{ 	
+ margin: 0;
+ padding: 40px 0 20px;
+} 
+ 	 
+ .fn-review_title .tsr-title {
+ 	display: inline-block;
+    font-weight: bold;
+    font-size: 22px;
+ }
+ 
+ .h4 {
+ position: absolute;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    margin: -1px;
+    width: 1px;
+    height: 1px;
+}
+.fn-review_rate {
+	padding: 25px 0;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #eee;
+}
+._product_review_rate > dl {
+    display: table;
+    margin: 0 auto;
+} 
+.fn_review_rate1 .guide {
+    display: block;
+    color: #333;
+    font-weight: bold;
+    font-size: 17px;
+    text-align: center;
+}
+
+.fn-seller_grade {
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    line-height: 200px;
+    vertical-align: middle;
+}
+
+.fn-seller_grade.tsr-grade_size5 {
+	position: relative;
+    height: 32px;
+    margin-left: -1px;
+    padding-top: 61px;
+} 
+	
+/* <h3>${reviewList}</h3>
+<h1>${starSum}</h1> */ 
