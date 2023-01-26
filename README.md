@@ -34,7 +34,6 @@
 - WAS : TOMCAT 8.0
 - 버전 및 이슈관리 : Github, Source Tree
 - 협업 툴 : Discord, Notion
-- 
 <br>
 
 
@@ -74,6 +73,7 @@
 
 ### [관리자 페이지]
 - 유저들의 정보를 조회, 수정할 수 있도록 하였습니다.
+
 | 유저 정보 검색, 수정 |
 |----------|
 |![회원정보수정](https://user-images.githubusercontent.com/56148268/214812304-1d4257b9-87fc-45ee-be29-cf09d0d4fc5c.PNG)|
@@ -92,6 +92,7 @@
 
 ### [장바구니]
  - 구매 예정인 물품을 장바구니로 옮길 수 있습니다.
+ 
 | 장바구니 |
 |----------|
 |![장바구니](https://user-images.githubusercontent.com/56148268/214812320-e19b2341-d5e2-463d-929f-5e9fd65c1c3a.PNG)|
@@ -100,6 +101,7 @@
 
 ### [주문, 취소 내역 확인]
  - 로그인한 회원의 주문 내역을 리스트에 저장해서 보여줍니다.
+ 
 | 주문 내역 |
 |----------|
 |![주문내역](https://user-images.githubusercontent.com/56148268/214812328-9f728c32-9a06-4407-b0b9-6ab065c8a642.PNG)|
@@ -107,6 +109,7 @@
 <br>
 
  - 상세 주문 내역보기를 누르면 주문번호와 매핑되는 정보를 출력해서 보여줍니다.
+ 
 | 상세 주문 내역보기 |
 |----------|
 |![상세주문내역](https://user-images.githubusercontent.com/56148268/214813713-db4b6e17-84f1-43ae-a54c-e8a6294258a8.PNG)|
@@ -114,6 +117,7 @@
 <br>
  
  - 주문 취소/환불하기를 누르면 환불사유를 선택해 취소 신청을 할 수 있습니다.
+ 
 | 주문 취소/환불하기 |
 |----------|
 |![주문취소신청](https://user-images.githubusercontent.com/56148268/214813720-f9fbce38-ff76-483a-ba51-185772f652da.PNG)|
@@ -121,6 +125,7 @@
 <br>
 
  - 취소한 내역들은 취소/환불 내역에서 확인할 수 있습니다.
+ 
 | 취소, 환불 내역 |
 |----------|
 |![취소환불내역](https://user-images.githubusercontent.com/56148268/214812336-bc7ffa0d-56ea-4510-accb-67dd383cb3d3.PNG)|
@@ -129,6 +134,7 @@
 
 ### [연도별 구매내역-마이페이지]
  - 구글 차트를 이용해 회원별로 연도별 구매내역을 확인할 수 있게 하였습니다.
+ 
 | 연도별 구매내역 |
 |----------|
 |![연도별구매내역](https://user-images.githubusercontent.com/56148268/214814545-852bc191-50d4-4ba9-be65-845cd5fceeb2.PNG)|
@@ -137,15 +143,19 @@
 
 ### [매출 통계-관리자 페이지]
  - 구글차트를 이용해서 테이블에 저장된 데이터들을 출력해보았습니다.
+ 
 | 회원 성별, 나이대 비율 |
 |----------|
 |![성별나이대](https://user-images.githubusercontent.com/56148268/214815255-c6cdbe26-dc84-44f6-9a96-351cf6e3bd76.PNG)|
+
 | 제일 많이 팔린 가구 Best 10 |
 |----------|
 |![Best10](https://user-images.githubusercontent.com/56148268/214815267-1e235c6d-0e76-4bfe-9070-c9a043ada4de.PNG)|
+
 | 연도별 공급가, 판매가, 순이익 확인 |
 |----------|
 |![순이익통계](https://user-images.githubusercontent.com/56148268/214815275-e6fde2ff-4ec1-49f2-8608-19f8c2cb43d6.PNG)|
+
 | 설정한 연도의 월별 총매출액 확인 |
 |----------|
 |![연도별월매출](https://user-images.githubusercontent.com/56148268/214815286-643b520d-5739-43df-b68c-9029e606663b.PNG)|
