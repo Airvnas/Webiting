@@ -1,5 +1,5 @@
 # Webiting
-# 📖 책 취향 공유 서비스앱 README
+# 📖 친환경 가구 쇼핑몰 ECOFUN README
 
 ![image1](https://user-images.githubusercontent.com/108252049/214798624-51f911b7-32ff-4d3e-a534-ae1141535e66.PNG)
 - 배포 URL : https://ohmycode-readme.netlify.app
@@ -21,9 +21,9 @@
 
 <div align="center">
 
-| **손예진** | **김민제** | **양희지** | **지창언** |
+| **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: | :------: |
-| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @yeon1615](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=150 width=150> <br/> @Cheorizzang](https://github.com/Cheorizzang) | [<img src="https://avatars.githubusercontent.com/u/112460506?v=4" height=150 width=150> <br/> @heejiyang](https://github.com/heejiyang) | [<img src="https://avatars.githubusercontent.com/u/76766459?v=4" height=150 width=150> <br/> @journey-ji](https://github.com/journey-ji) |
+| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @yeon1615](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=150 width=150> <br/> @Cheorizzang](https://github.com/Cheorizzang) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @yeon1615](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/76766459?v=4" height=150 width=150> <br/> @journey-ji](https://github.com/journey-ji) |
 
 </div>
 
