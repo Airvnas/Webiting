@@ -21,7 +21,7 @@
 
 | **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: |
-| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @yeon1615](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/112460466?v=4" height=150 width=150> <br/> @Cheorizzang](https://github.com/Airvnas) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @yeon1615](https://github.com/yeon1615) | 
+| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
 
 </div>
 
