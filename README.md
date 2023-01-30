@@ -327,7 +327,7 @@
 
 | 주문목록 |
 |----------|
-|![prodEditDel](https://user-images.githubusercontent.com/108252049/215317730-36e0de43-a354-4601-885b-33756aff72d5.png)|
+|<img src="https://user-images.githubusercontent.com/116619009/215464431-8124e4eb-b663-458a-8168-ca231a8af7c1.png" width="800" height="600">|
 
 <br>
 
