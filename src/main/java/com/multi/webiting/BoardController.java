@@ -94,10 +94,13 @@ public class BoardController {
       
       //log.info(board.getName()+"//"+board.getSubject()+"//"+board.getPasswd());
     //제목, 작성자, 비밀번호 입력하지 않을 시 다시 입력창 보여주기
-      if(board.getName()==null||board.getSubject()==null||board.getPasswd()==null||
-         board.getName().trim().isEmpty()||board.getSubject().trim().isEmpty()||board.getPasswd().isEmpty()) {
-         return "redirect:write";
-      }   
+      if("write".equals(board.getMode())){
+    	  if(board.getName()==null||board.getSubject()==null||board.getPasswd()==null||
+    		         board.getName().trim().isEmpty()||board.getSubject().trim().isEmpty()||board.getPasswd().isEmpty()) {
+    		         return "redirect:write";
+    	}  
+      }
+       
       log.info("before====================="+board);
       UserVO loginUser=loginCheck(session);//세션에서 로그인 정보를 가져온다-> 차후 로그인 정보를 비교하여 게시글 접근 범위를 설정하기 필요함
       int n=0;

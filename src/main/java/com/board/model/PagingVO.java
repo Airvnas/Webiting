@@ -45,6 +45,7 @@ public class PagingVO {
 			ses.setAttribute("pageSize", pageSize);
 			ses.setAttribute("dateCheck", dateCheck);
 		}
+		
 		log.info("1. PagingVO pageSize======================="+pageSize);
 		log.info("1. PagingVO totalCount======================="+totalCount);
 		log.info("1. PagingVO dateStart======================="+dateStart);

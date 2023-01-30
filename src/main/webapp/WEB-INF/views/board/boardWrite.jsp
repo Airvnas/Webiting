@@ -7,12 +7,12 @@
 <script>
 	$(function(){
 		$('#bf').submit(function(){
-			if($('#name').val()==''){
+			if($('#name').val()==''||$('#name').val().trim()==''){
 				alert("이름을 입력하세요");
 				$('#name').focus();
 				return false;
 			}
-			if($('#subject').val()==''){
+			if($('#subject').val()==''||$('#subject').val().trim()==''){
 				alert('제목을 입력하세요');
 				$('#subject').focus();
 				return false;

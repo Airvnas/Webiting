@@ -8,11 +8,12 @@
 <script>
 	$(function() {// 답변글 유효성 체크
 		$('#bf').submit(function() {
-			if ($('#subject').val() == '') {
+			if($('#subject').val()==''||$('#subject').val().trim()==''){
 				alert('제목을 입력하세요');
 				$('#subject').focus();
 				return false;
 			}
+
 			if ($('#content').val() == '') {
 				alert('글내용을 입력하세요');
 				$('#content').focus();
