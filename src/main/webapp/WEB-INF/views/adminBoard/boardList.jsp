@@ -51,6 +51,16 @@
 		}
 		return true;
 	}
+	
+	function pageChk(){
+		let page=$('select[name=pageSize]').val();
+		if(page==''){
+			return false;
+		}		
+		$('form[name=pageSizeF]').submit();
+		
+	}
+	
 </script>
 <main>
 	<section>
@@ -67,8 +77,8 @@
 				<input type="hidden" name="findKeyword" value="${paging.findKeyword}">
 			    <input type="hidden" name="cpage" value="${paging.cpage}">
 				<!--  ------------------->
-				<select name="pageSize" style="padding: 6px;" onchange="submit()">
-					<option>::페이지 사이즈::</option>
+				<select name="pageSize" style="padding: 6px;" onchange="pageChk()">
+					<option value="">::페이지 사이즈::</option>
 					<c:forEach var="ps" begin="5" end="20" step="5">\
 						<option value="${ps}"
 							<c:if test="${pageSize eq ps}">selected</c:if>>페이지 사이즈 ${ps}</option>
