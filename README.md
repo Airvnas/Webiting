@@ -22,7 +22,7 @@
 
 | **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: |
-| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://user-images.githubusercontent.com/108252049/215776764-d8579f32-db4c-4477-8919-7b1821e22c59.jpg" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
+| [<img src="[https://avatars.githubusercontent.com/u/106502312?v=4](https://user-images.githubusercontent.com/108252049/215776762-13bc05d9-5cf7-4855-bec8-468fd23c43d3.jpg)" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="[https://avatars.githubusercontent.com/u/106502312?v=4](https://user-images.githubusercontent.com/108252049/215776764-d8579f32-db4c-4477-8919-7b1821e22c59.jpg)" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://user-images.githubusercontent.com/108252049/215776757-3470388c-b7fc-4f48-b1f3-9b839e9e4de6.jpg" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
 
 </div>
 
