@@ -22,7 +22,7 @@
 
 | **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: |
-| [<img src="(https://user-images.githubusercontent.com/108252049/215776762-13bc05d9-5cf7-4855-bec8-468fd23c43d3.jpg)" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="(https://user-images.githubusercontent.com/108252049/215776764-d8579f32-db4c-4477-8919-7b1821e22c59.jpg)" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://user-images.githubusercontent.com/108252049/215776757-3470388c-b7fc-4f48-b1f3-9b839e9e4de6.jpg" height=150 width=150> <br/> @YeJin](https://github.com/yejin0990) | 
+| [<img src="https://user-images.githubusercontent.com/108252049/215776762-13bc05d9-5cf7-4855-bec8-468fd23c43d3.jpg" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="https://user-images.githubusercontent.com/108252049/215776764-d8579f32-db4c-4477-8919-7b1821e22c59.jpg" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://user-images.githubusercontent.com/108252049/215776757-3470388c-b7fc-4f48-b1f3-9b839e9e4de6.jpg" height=150 width=150> <br/> @YeJin](https://github.com/yejin0990) | 
 
 </div>
 
@@ -45,9 +45,9 @@
 ### Spring MVC
 
 - Spring MVC Model 2
-    - Controller, View, Model로 나누어 요청을 처리하면 Business Logic 과 View가 분리되기 때문에 코드가 간결해진다.
+    - Controller, View, Model로 나누면 Business Logic 과 View가 분리되기 때문에 코드가 간결해진다.
     - DispatcherServlet로 들어온 요청을 해당하는 Controller로 보내 작업을 처리하기 때문에 분업이 용이하다.
-    - 분업을 하기 때문에 유지,보수가 용이하다.
+    - 이러한 특징을 이용해 분업을 하기 때문에 유지,보수가 용이하다.
 
 
 ### 브랜치 전략
@@ -107,9 +107,9 @@
 
 ### 작업 관리
 
-- 기능 구현에 따라 방향성에 대한 의논을 하고, 각자 맡은 파트를 Notion TeamSpace에 예정,진행중,완료로 나누어 팀원 모두 확인할 수 있게 했습니다.
+- 각자 맡은 파트를 Notion TeamSpace에 예정,진행중,완료로 나누어 팀원 모두 확인할 수 있게 했습니다.
 - 주간회의를 진행하며 코드를 병합하고 작업 순서와 방향성에 대한 고민을 나누고 Notion에 회의 내용을 기록했습니다.
-- 강사님, 멘토님의 피드백 내용을 적극 반영하였습니다.
+- 강사님, 멘토님의 피드백 내용을 적극 반영했습니다.
 
 <br>
 
@@ -449,7 +449,7 @@
 
 
 
-## 6. 개선 목표 및 평가
+## 6. 프로젝트 평가
 
 - 가구 쇼핑몰의 기본기능과 더불어 사용자 구매 이력이나 클릭한 상품이력 데이터 머신러닝을 활용한 개인화 추천 시스템, 인기추천 시스템을 구현한 것이 돋보임. 개별화 추천 시스템을 좀 더 시각적으로 차별성있게 달라지는 부분을 보여줬으면 더 좋았을 것. 관리자 페이지의 관리 기능도 완성도 있게 구현함
 - Aitems 활용하여 다양한 상품추천이 구현되었으나 실질적으로 정확한 데이터인지 판별할 ref가 없음 폐가구 수거 기능 처럼 기존의 쇼핑몰 과는 차별성을 두려는 시도가 보였음
