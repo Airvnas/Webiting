@@ -72,7 +72,7 @@
 - 이후, 통합된 버전의 프로젝트를 pull 받아 동일한 환경의 프로젝트로 작업을 진행했습니다.
 - 이를 경험해봄으로써 다음 프로젝트부터는 Git-flow 전략을 기반으로 main, develop 브랜치와 feature 보조 브랜치를 운용할 예정입니다.
 
-    <img src="https://github.com/Airvnas/Webiting/issues/10#issue-1564243036?v=4" height=150 width=150> <br/>
+![gitbranch](https://user-images.githubusercontent.com/108252049/215765024-459b1c49-db9b-4167-a457-24af27b9e8b0.png)
 <br>
 
 ## 3. 프로젝트 구조
