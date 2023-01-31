@@ -22,7 +22,7 @@
 
 | **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: |
-| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
+| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://user-images.githubusercontent.com/108252049/215776764-d8579f32-db4c-4477-8919-7b1821e22c59.jpg" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
 
 </div>
 
@@ -42,16 +42,14 @@
 
 ## 2. 채택한 개발 기술과 브랜치 전략
 
-### Spring, styled-component
+### Spring MVC
 
-- Spring
-    - 컴포넌트화를 통해 추후 유지보수와 재사용성을 고려했습니다.
-    - 유저 배너, 상단과 하단 배너 등 중복되어 사용되는 부분이 많아 컴포넌트화를 통해 리소스 절약이 가능했습니다.
-- styled-component
-    - props를 이용한 조건부 스타일링을 활용하여 상황에 알맞은 스타일을 적용시킬 수 있었습니다.
-    - 빌드될 때 고유한 클래스 이름이 부여되어 네이밍 컨벤션을 정하는 비용을 절약할 수 있었습니다.
-    - S dot naming을 통해 일반 컴포넌트와 스타일드 컴포넌트를 쉽게 구별하도록 했습니다.
-    
+- Spring MVC Model 2
+    - Controller, View, Model로 나누어 요청을 처리하면 Business Logic 과 View가 분리되기 때문에 코드가 간결해진다.
+    - DispatcherServlet로 들어온 요청을 해당하는 Controller로 보내 작업을 처리하기 때문에 분업이 용이하다.
+    - 분업을 하기 때문에 유지,보수가 용이하다.
+
+
 ### 브랜치 전략
 
 - main, 개인브랜치로 나누어 개인별 커밋 후 main에서 통합했습니다.
