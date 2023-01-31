@@ -68,12 +68,11 @@
 
 ### 브랜치 전략
 
-- Git-flow 전략을 기반으로 main, develop 브랜치와 feature 보조 브랜치를 운용했습니다.
-- main, develop, Feat 브랜치로 나누어 개발을 하였습니다.
-    - **main** 브랜치는 배포 단계에서만 사용하는 브랜치입니다.
-    - **develop** 브랜치는 개발 단계에서 git-flow의 master 역할을 하는 브랜치입니다.
-    - **Feat** 브랜치는 기능 단위로 독립적인 개발 환경을 위하여 사용하고 merge 후 각 브랜치를 삭제해주었습니다.
+- main, 개인브랜치로 나누어 개인별 커밋 후 main에서 통합했습니다.
+- 이후, 통합된 버전의 프로젝트를 pull 받아 동일한 환경의 프로젝트로 작업을 진행했습니다.
+- 이를 경험해봄으로써 다음 프로젝트부터는 Git-flow 전략을 기반으로 main, develop 브랜치와 feature 보조 브랜치를 운용할 예정입니다.
 
+    <img src="https://github.com/Airvnas/Webiting/issues/10#issue-1564243036?v=4" height=150 width=150> <br/>
 <br>
 
 ## 3. 프로젝트 구조
