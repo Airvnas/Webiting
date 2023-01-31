@@ -42,9 +42,9 @@
 
 ## 2. 채택한 개발 기술과 브랜치 전략
 
-### React, styled-component
+### Spring, styled-component
 
-- React
+- Spring
     - 컴포넌트화를 통해 추후 유지보수와 재사용성을 고려했습니다.
     - 유저 배너, 상단과 하단 배너 등 중복되어 사용되는 부분이 많아 컴포넌트화를 통해 리소스 절약이 가능했습니다.
 - styled-component
@@ -52,21 +52,6 @@
     - 빌드될 때 고유한 클래스 이름이 부여되어 네이밍 컨벤션을 정하는 비용을 절약할 수 있었습니다.
     - S dot naming을 통해 일반 컴포넌트와 스타일드 컴포넌트를 쉽게 구별하도록 했습니다.
     
-### Recoil
-
-- 최상위 컴포넌트를 만들어 props로 유저 정보를 내려주는 방식의 경우 불필요한 props 전달이 발생합니다. 따라서, 필요한 컴포넌트 내부에서만 상태 값을 가져다 사용하기 위해 상태 관리 라이브러리를 사용하기로 했습니다.
-- Redux가 아닌 Recoil을 채택한 이유
-    - Recoil은 React만을 위한 라이브러리로, 사용법도 기존의 useState 훅을 사용하는 방식과 유사해 학습비용을 낮출 수 있었습니다.
-    - 또한 Redux보다 훨씬 적은 코드라인으로 작동 가능하다는 장점이 있었습니다.
-- 로그인과 최초 프로필 설정 시 유저 정보를 atom에 저장하여 필요한 컴포넌트에서 구독하는 방식으로 사용했습니다.
-
-### eslint, prettier
-
-- 정해진 규칙에 따라 자동적으로 코드 스타일을 정리해 코드의 일관성을 유지하고자 했습니다.
-- 코드 품질 관리는 eslint에, 코드 포맷팅은 prettier에 일임해 사용했습니다.
-- airbnb의 코딩 컨벤션을 참고해 사용했고, 예외 규칙은 팀원들과 협의했습니다.
-- 협업 시 매번 컨벤션을 신경 쓸 필요 없이 빠르게 개발하는 데에 목적을 두었습니다.
-
 ### 브랜치 전략
 
 - main, 개인브랜치로 나누어 개인별 커밋 후 main에서 통합했습니다.
@@ -76,79 +61,8 @@
 ![gitbranch](https://user-images.githubusercontent.com/108252049/215765024-459b1c49-db9b-4167-a457-24af27b9e8b0.png)
 <br>
 
-## 3. 프로젝트 구조
 
-```
-├── README.md
-├── .eslintrc.js
-├── .gitignore
-├── .prettierrc.json
-├── package-lock.json
-├── package.json
-│
-├── public
-│    └── index.html
-└── src
-     ├── App.jsx
-     ├── index.jsx
-     ├── api
-     │     └── mandarinAPI.js
-     ├── asset
-     │     ├── fonts
-     │     ├── css_sprites.png
-     │     ├── logo-404.svg
-     │     └── logo-home.svg
-     │          .
-     │          .
-     │          .
-     ├── atoms
-     │     ├── LoginData.js
-     │     └── LoginState.js
-     ├── common
-     │     ├── alert
-     │     │     ├── Alert.jsx
-     │     │     └── Alert.Style.jsx
-     │     ├── button
-     │     ├── comment
-     │     ├── inputBox
-     │     ├── post
-     │     ├── postModal
-     │     ├── product
-     │     ├── tabMenu
-     │     ├── topBanner
-     │     └── userBanner
-     ├── pages
-     │     ├── addProduct
-     │     │     ├── AddProduct.jsx
-     │     │     └── AddProduct.Style.jsx
-     │     ├── chatList
-     │     ├── chatRoom
-     │     ├── emailLogin
-     │     ├── followerList
-     │     ├── followingList
-     │     ├── home
-     │     ├── join
-     │     ├── page404
-     │     ├── postDetail
-     │     ├── postEdit
-     │     ├── postUpload
-     │     ├── productEdit
-     │     ├── profile
-     │     ├── profileEdit
-     │     ├── profileSetting
-     │     ├── search
-     │     ├── snsLogin
-     │     └── splash
-     ├── routes
-     │     ├── privateRoutes.jsx
-     │     └── privateRoutesRev.jsx  
-     └── styles
-           └── Globalstyled.jsx
-```
-
-<br>
-
-## 4. 역할 분담
+## 3. 역할 분담
     
 ### 👻구민수
 
@@ -164,27 +78,26 @@
 ### 😎김진엽
 
 - **UI**
-    - 페이지 : splash 페이지, sns 로그인 페이지, 로그인, 회원가입
-    - 공통 컴포넌트 : 상품 카드, 사용자 배너
+    - 회원가입, 로그인, 메인페이지, 상품 정렬, 상품 상세페이지, 폐가구 수거 신청,목록 페이지
 - **기능**
-    - splash 페이지, sns로그인 페이지, 로그인 유효성 및 중복 검사, 회원가입 유효성 및 중복 검사, 이메일 검증, 프로필 설정, 접근제한 설정
+    - 회원관리(CRUD),   리뷰 CRUD,  폐가구 수거 CRD
+    - 상품 CRUD, 카테고리별 상품(출력,검색,정렬,페이징 처리) ,상품 좋아요 기능,Naver AITEMS를 통한 개인화,인기 상품 추천
 
 <br>
 
 ### 🍊 손예진
 
-- **마이 페이지**
-    - 장바구니, 관심 상품 목록 페이지
-    - 결제, 주문 내역 조회 페이지
-    - 매출 통계 페이지
-- **관리자 페이지**
-    - 회원 조회/수정
-    - 매출 통계 페이지
+- **UI**
+    - 마이페이지 : 장바구니, 관심 상품 목록, 결제, 주문 내역 조회, 연매출 통계 페이지
+    - 관리자 페이지 : 회원 조회/수정, 매출 통계 페이지
+- **기능**
+    - 장바구니/관심 상품 등록 시 중복 방지, 테이블에 저장된 데이터 출력, 페이징 처리
+    - 구글차트를 이용해 데이터 시각화, 회원 데이터 수정,삭제 처리
 
 <br>
 
 
-## 5. 개발 기간 및 작업 관리
+## 4. 개발 기간 및 작업 관리
 
 ### 개발 기간
 
@@ -202,15 +115,8 @@
 
 <br>
 
-## 6. 신경 쓴 부분
 
-- [접근제한 설정](https://github.com/likelion-project-README/README/wiki/README-6.%EC%8B%A0%EA%B2%BD-%EC%93%B4-%EB%B6%80%EB%B6%84_%EC%A0%91%EA%B7%BC%EC%A0%9C%ED%95%9C-%EC%84%A4%EC%A0%95)
-
-- [Recoil을 통한 상태관리 및 유지](https://github.com/likelion-project-README/README/wiki/README-6.%EC%8B%A0%EA%B2%BD-%EC%93%B4-%EB%B6%80%EB%B6%84_Recoil%EC%9D%84-%ED%86%B5%ED%95%9C-%EC%83%81%ED%83%9C%EA%B4%80%EB%A6%AC-%EB%B0%8F-%EC%9C%A0%EC%A7%80)
-
-<br>
-
-## 7. 페이지별 기능
+## 5. 페이지별 기능
 ## 회원기준
 
 ### [회원가입]
@@ -545,38 +451,17 @@
 
 
 
-## 8. 트러블 슈팅
+## 6. 개선 목표 및 평가
 
-- [탭메뉴 프로필 버튼 이슈](https://github.com/likelion-project-README/README/wiki/README-8.%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_%ED%83%AD%EB%A9%94%EB%89%B4-%ED%94%84%EB%A1%9C%ED%95%84-%EB%B2%84%ED%8A%BC-%EC%9D%B4%EC%8A%88)
-
-- [프로필 수정 이슈](https://github.com/likelion-project-README/README/wiki/README-8.%ED%8A%B8%EB%9F%AC%EB%B8%94-%EC%8A%88%ED%8C%85_%ED%94%84%EB%A1%9C%ED%95%84-%EC%88%98%EC%A0%95-%EC%9D%B4%EC%8A%88)
-
-<br>
-
-## 9. 개선 목표
-
-- API 모듈화 : API를 불러오는 코드의 반복이 많아 모듈화할 예정
-- lighthouse Performance 증진
-    - 모든 페이지에서 특히 Best Practices & SEO 점수는 90~100으로 우수
-    - Performance 점수가 대체적으로 미흡한 문제
+- 가구 쇼핑몰의 기본기능과 더불어 사용자 구매 이력이나 클릭한 상품이력 데이터 머신러닝을 활용한 개인화 추천 시스템, 인기추천 시스템을 구현한 것이 돋보임. 개별화 추천 시스템을 좀 더 시각적으로 차별성있게 달라지는 부분을 보여줬으면 더 좋았을 것. 관리자 페이지의 관리 기능도 완성도 있게 구현함
+- Aitems 활용하여 다양한 상품추천이 구현되었으나 실질적으로 정확한 데이터인지 판별할 ref가 없음 폐가구 수거 기능 처럼 기존의 쇼핑몰 과는 차별성을 두려는 시도가 보였음
+- 전반적으로 구현이 완벽하게 이루어졌으며, 특히 결제API를 활용하여 결제 정보를 구현하고, 네이버 AITEMS를 이용하여 개인별 추천 기능을 구현한 점에서 높은 평가를 함
+- 폐가구 기능 추가는 참신한 아이디어로 보임. 사용자에게 보여주는 정보는 그 활용도를 충분히 고려하여 결정하면 좋을 것 같음. (개인별 구매이력은 의미가 없어 보임)
     
-    ![KakaoTalk_Photo_2023-01-04-16-55-30](https://user-images.githubusercontent.com/112460466/210591134-09bf8efd-3c34-4b99-a3d7-895ca99e1457.png)
-    
-- **23-01-17 성능 개선 내용**
-    
-    ![성능개선 후](https://user-images.githubusercontent.com/106502312/212872369-7ceeb2cf-d551-41d2-bfb0-01e35e9903fe.png)
-    
-    - 이미지 최적화
-        - `<img>` 요소에 `width` , `height` 속성값을 명시해 불필요한 Reflow를 방지했습니다.
-        - browser-image-compression 라이브러리를 사용해 유저가 업로드하는 이미지를 압축했습니다.
-        - Intersection Observer API를 사용해 Lazy Loading 기법을 적용하여 홈 피드의 게시글 이미지가 viewport 내에 들어오는 순간 로딩되도록 변경했습니다.
-    - 웹폰트 최적화
-        - WOFF2 포맷을 추가하고 가장 우선적으로 적용되도록 선언했습니다.
-        - 서브셋 폰트로 교체해 용량을 줄였습니다.
     
 <br>
 
-## 10. 프로젝트 후기
+## 7. 프로젝트 후기
 
 ### 👻 구민수
 
