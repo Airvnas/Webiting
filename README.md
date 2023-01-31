@@ -21,7 +21,7 @@
 
 | **구민수** | **김진엽** | **손예진** | 
 | :------: |  :------: | :------: |
-| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/yeon1615) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
+| [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @MinSu](https://github.com/KuMinSoo) | [<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @JinYeop](https://github.com/Airvnas) |[<img src="https://avatars.githubusercontent.com/u/106502312?v=4" height=150 width=150> <br/> @YeJin](https://github.com/yeon1615) | 
 
 </div>
 
@@ -29,10 +29,14 @@
 
 ## 1. 개발 환경
 
-- Front : HTML, CSS, BootStrap4, JS, JSP
-- Back-end : 
+- Front : HTML, CSS, BootStrap4, JS, JSP, JQuery, Ajax
+- Back-end : Java & Spring Framework, maven, mybatis, lombok, 
+- Server: Tomcat 9.0.68
+- Database : ORACLE
+- API: NAVER CLOUD API, IMPORT API
 - 버전 및 이슈관리 : Github, Github Issues, Github Project
 - 협업 툴 : Discord, Notion, Github, SourceTree
+
 <br>
 
 ## 2. 채택한 개발 기술과 브랜치 전략
@@ -149,10 +153,11 @@
 ### 👻구민수
 
 - **UI**
-    - 페이지 : 프로필 설정, 프로필 수정, 팔로잉&팔로워 리스트, 상품 등록, 상품 수정, 채팅 목록, 404 페이지
-    - 공통 컴포넌트 : 탭메뉴, InputBox, Alert 모달, 댓글
+    - 회원게시판 CRUD 관련 페이지, 관리자게시판 CRUD 관련 페이지, 주문목록 페이지
+    - 취소관리 페이지, 배송현황 페이지, 관리자/마이페이지 네비게이션
 - **기능**
-    - 프로필 설정 및 수정 페이지 유저 아이디 유효성 및 중복 검사, 상품 등록 및 수정
+    - 게시판 (등록/삭제/수정/답글/파일업로드/비밀번호설정), 게시판 글등록시 유효성 검사, 게시판 검색기능, 페이지사이즈별 보기 및 페이징처리 
+    - 아임포트 결제 API 구현(1차/2차 ), 주문목록 조건 검색(배송상태, 주문상태, 기간설정, 키워트 검색), 배송상태 변경, 취소상태 변경  
 
 <br>
 
@@ -296,6 +301,17 @@
 
 <br>
 
+
+### [결제하기]
+- 결제는 아임포트 API로 설정했으며, 아임포트에서 요구하는 필수정보와 선택정보를 담아 Javascript에서 1차 전송할 수 있도록 했습니다.
+- 이후 아임포트의 결제번호를 이용해 JAVA 컨트롤러에서 2차 전송하며, 1차/ 2차 검증을 통해 총 결제금액이 참일 경우 DB에 저장할 수 있도록 구성했습니다.
+
+| 결제하기 |
+|----------|
+|![결제](https://user-images.githubusercontent.com/116619009/215628569-566f73eb-92af-4b98-99d8-278adfdc612c.png)|
+
+
+
 <br>
 
 
@@ -306,7 +322,7 @@
 
 | 고객게시판 홈화면 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215472618-045c9738-175b-41fb-b751-9a4e431ace24.png" width="800" height="600" alt="회원게시판 홈화면">|
+|![회원게시판 홈화면](https://user-images.githubusercontent.com/116619009/215472618-045c9738-175b-41fb-b751-9a4e431ace24.png)|
 
 <br>
 
@@ -317,7 +333,7 @@
 
 | 고객문의 글등록 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215473759-63cc39aa-5aef-4fff-86a6-bed7e1409636.png" width="800" height="600" alt="회원게시판 글쓰기">|
+|![회원게시판 글쓰기](https://user-images.githubusercontent.com/116619009/215473759-63cc39aa-5aef-4fff-86a6-bed7e1409636.png)|
 
 <br>
 
@@ -329,7 +345,7 @@
 
 | 게시글 편집하기 / 삭제하기 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215500838-08a7749f-953a-44db-8e4c-895ec3317631.png" width="800" height="600" alt="회원글 수정삭제">|
+|![회원글 수정삭제](https://user-images.githubusercontent.com/116619009/215500838-08a7749f-953a-44db-8e4c-895ec3317631.png)|
 
 <br>
 
@@ -340,7 +356,7 @@
 
 | 게시글 목록 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215504937-688a64b7-a4a1-422c-a15d-bd5797264573.png" width="800" height="600" alt="관리자 게시판 목록">|
+|![회원게시판 목록](https://user-images.githubusercontent.com/116619009/215499629-dd880f37-84b8-47be-be32-a1dbdf197c1e.png)|
 
 <br>
 
@@ -376,7 +392,7 @@
 
 | 주문목록 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215464431-8124e4eb-b663-458a-8168-ca231a8af7c1.png" width="100%" height="600">|
+|![주목목록](https://user-images.githubusercontent.com/116619009/215464431-8124e4eb-b663-458a-8168-ca231a8af7c1.png)|
 
 <br>
 
@@ -387,7 +403,7 @@
 
 | 배송관리 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215466156-8117c842-7a4f-4950-9869-28952339adbb.png" width="100%" height="600" alt="배송관리">|
+|![배송관리](https://user-images.githubusercontent.com/116619009/215466156-8117c842-7a4f-4950-9869-28952339adbb.png)|
 
 <br>
 
@@ -398,7 +414,7 @@
 
 | 취소관리 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215466558-43866caa-12c0-4f99-ab19-8d0e0d818374.png" width="100%" height="600" alt="취소관리">|
+|![취소관리](https://user-images.githubusercontent.com/116619009/215466558-43866caa-12c0-4f99-ab19-8d0e0d818374.png)|
 
 <br>
 
@@ -409,7 +425,7 @@
 
 | 관리자 게시판 / 공지사항 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215504937-688a64b7-a4a1-422c-a15d-bd5797264573.png" width="800" height="600" alt="관리자 게시판 목록">|
+|![관리자 게시판 목록](https://user-images.githubusercontent.com/116619009/215504937-688a64b7-a4a1-422c-a15d-bd5797264573.png)|
 
 <br>
 
@@ -419,8 +435,8 @@
 
 | 관리자 게시판 / 공지사항 |
 |----------|
-|<img src="https://user-images.githubusercontent.com/116619009/215505928-ad007fd1-3247-4349-9d0d-b4b2b7399cbf.png" width="800" height="600" alt="관리자 답글달기">|
-|<img src="https://user-images.githubusercontent.com/116619009/215506668-1708fe0a-fc4f-4431-9c6f-a07964c52dea.png" width="800" alt="관리자 답글달기2">|
+|![관리자 답글달기](https://user-images.githubusercontent.com/116619009/215505928-ad007fd1-3247-4349-9d0d-b4b2b7399cbf.png)|
+|![관리자 답글달기2](https://user-images.githubusercontent.com/116619009/215506668-1708fe0a-fc4f-4431-9c6f-a07964c52dea.png)|
 
 <br>
 
@@ -461,7 +477,7 @@
 
 ### 👻 구민수
 
-여러모로 많은 것들을 배울 수 있었던 한 달이었습니다. 혼자서는 할 수 없었던 일이라는 것을 너무 잘 알기에 팀원들에게 정말 감사하다는 말 전하고 싶습니다. 개인적으로 아쉬웠던 부분은 기한 내에 기능을 구현하는 데에만 집중하면서 트러블 슈팅이나 새로 배웠던 것들을 체계적으로 기록하지 못했다는 점입니다. 이렇게 느낀 바가 있으니 이후의 제가 잘 정리하면서 개발할 거라 믿습니다… 하하 다들 수고하셨습니다!!!!
+  프로젝트를 마무리하면서 백엔드 관련 코딩하기 전에 먼저 선행되어야 할 작업이 있다는 것을 깨달았습니다. 선행되어야 하는 작업 첫 번째로는 프로그램 UI의 전체적인 틀을 먼저 구성하는 것과 두 번째 해당 프로젝트의 시나리오를 미리 만들어 보는 것, 세 번째는 이에 필요한 DB 구조와 테이블을 구성하는 것입니다. 그리고 이 모든 것이 잘 구성되어야 코딩을 할 때 좀 더 편하게 할 수 있고 모든 팀원이 해당 프로젝트에 대해 더 잘 이해할 수 있다는 것을 알게 되었습니다. 하지만 프로젝트를 처음 만드는 과정이기에 부딪치면서 이것저것 하면서 배울 수 밖에 없었지만 다음에 또 프로젝트를 진행한다면 전체적인 틀과 구성에 대해 미리 점검하고 치밀하게 고민 필요가 있다는 것을 느꼈습니다. 그리고 무엇보다 같이 소통하면서 각자의 업무를 충실하게 진행한 팀원들이 있었기에 기한 안에 표현하고자 한 필수적인 기능을 모두 표현할 수 있었습니다.
 
 <br>
 
