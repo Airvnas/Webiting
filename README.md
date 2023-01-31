@@ -1,7 +1,7 @@
 # Webiting
 # :leaves: 친환경 가구 쇼핑몰 ECOFUN
 
-![image1](https://user-images.githubusercontent.com/108252049/214798624-51f911b7-32ff-4d3e-a534-ae1141535e66.PNG)
+![KakaoTalk_20230131_225543285](https://user-images.githubusercontent.com/108252049/215779670-e5de8136-95f8-4c2a-947e-aa5595ed9785.png)
 
 <br>
 
@@ -9,7 +9,7 @@
 ## 프로젝트 소개
 
 - ECOFUN은 eco funiture heaven의 줄임말로, 친환경 가구 쇼핑몰 프로젝트입니다.
-- 홈페이지의 기본적인 CRUD 기능을 갖추고 있습니다.
+- 쇼핑몰의 기본적인 CRUD 기능을 갖추고 있습니다.
 - 쇼핑몰을 회원과 관리자의 입장에서 기능을 나눠 구현했습니다.
 - 기존 쇼핑몰의 기능들을 최대한 구현해보고자 하였고  naver aitems를 통한 개인화추천, 인기상품추천 기능과 결제,마이페이지 등의 기능을 구현했습니다.
 
@@ -459,7 +459,7 @@
     
 <br>
 
-## 7. 프로젝트 후기
+## 7. 프로젝트 소감
 
 ### 👻 구민수
 
