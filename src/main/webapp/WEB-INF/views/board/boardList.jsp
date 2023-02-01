@@ -8,28 +8,8 @@
 
 
 <c:import url="/top" />
+<link rel="stylesheet" href="/resources/css/board.css">
 
-<style>
-	#boardBody>tr>td:nth-child(5n+2) {
-		white-space: nowrap;
-		overflow: hidden;
-		text-overflow: ellipsis;
-	}
-	img#secret {
-		width:15px;
-		height:15px;
-	}
-	a[href] { 
-		text-decoration:none;
-		color:black;
-	}
-	
-	#notice{
-		width:30px;
-		height:17px;
-	}
-
-</style>
 <script>
 
 	function check() {//검색시 유효성 체크(검색유형, 검색어) 함수

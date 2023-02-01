@@ -5,6 +5,8 @@
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <c:import url="/top" />
+<link rel="stylesheet" href="/resources/css/board.css">
+
 <script>
 	$(function() {
 		$('#bf').submit(function() {
@@ -29,35 +31,7 @@
 
 	})//$()end-----------------
 </script>
-<style>
-	table{
-		table-layout:fixed;
-		word-break:break-all;
-	}
-	
-	#content{
-		height:300px;
-		overflow:auto;
-	}
-	
-	#notice{
-		width:30px;
-		height:17px;
-	}
-	.btn {
-            background-color: rgb(236, 236, 236); /* Blue background */
-            border: none; /* Remove borders */
-            color: black; /* White text */
-            padding: 6px 12px; /* Some padding */
-            font-size: 16px; /* Set a font size */
-            cursor: pointer; /* Mouse pointer on hover */
-            border-radius: 5px;
-        }
 
-    .btn:hover {
-        text-decoration: underline;
-    }
-</style>
 <div align="center" id="bbs" class="col-md-8 offset-md-2">
 	<input type="hidden" name="mode" value="write">
 	<br><h1 class="mt-5">게시글보기</h1><br>

@@ -1,0 +1,83 @@
+@charset "UTF-8";
+
+	#bpwd, #name, #filename{
+		width:200px;
+	}
+
+
+	.panel-heading ~div{
+		font-family:"Glyphicons Halflings";
+		border-bottom: 2px solid #b3b3b3;
+		margin-top:15px;
+		padding:3px;
+			
+	}
+	
+	.panel-heading{
+		margin-top:30px;
+	}
+
+	.panel-body{
+		background-color:#ebebeb;
+		margin-bottom:5px;
+		padding:10px;
+		border-radius:10px;
+		font-size:15px;
+	}	
+	
+	h4{ font-size:16px;}
+	
+	.btn-list{
+		display:flex;
+		justify-content:center;
+		align-items: center;	
+	}
+	.btn-list button + button{
+		margin-left:40px;		
+	}
+
+
+	#boardBody>tr>td:nth-child(5n+2) {
+		white-space: nowrap;
+		overflow: hidden;
+		text-overflow: ellipsis;
+	}
+	img#secret {
+		width:15px;
+		height:15px;
+	}
+	a[href] { 
+		text-decoration:none;
+		color:black;
+	}
+	
+	#notice{
+		width:30px;
+		height:17px;
+	}
+
+	table{
+		table-layout:fixed;
+		word-break:break-all;
+	}
+	
+	#content{
+		height:300px;
+		overflow:auto;
+	}
+	
+	.btn {
+            background-color: rgb(236, 236, 236); /* Blue background */
+            border: none; /* Remove borders */
+            color: black; /* White text */
+            padding: 6px 12px; /* Some padding */
+            font-size: 16px; /* Set a font size */
+            cursor: pointer; /* Mouse pointer on hover */
+            border-radius: 5px;
+        }
+
+    .btn:hover {
+        text-decoration: underline;
+    }
+
+	

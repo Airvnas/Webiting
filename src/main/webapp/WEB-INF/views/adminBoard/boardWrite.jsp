@@ -41,12 +41,6 @@
 	})//$()end-----------------
 </script>
 
-<style>
-	#bpwd, #name, #filename{
-		width:200px;
-	}
-
-</style>
 <main>
 	<section>
 <div class="container mt-4" style="overflow: auto ;position:relative">

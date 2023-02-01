@@ -4,6 +4,7 @@
 <%@ taglib prefix="fmt"  uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:import url="/top"/>
+<link rel="stylesheet" href="/resources/css/board.css">
 <script>
 	$(function(){//수정글 유효성 체크
 		$('#bf').submit(function(){
@@ -18,12 +19,12 @@
 				return false;
 			}
 			if($('#content').val()==''){
-				alert('글내용을 입력하세요').
+				alert('글내용을 입력하세요');
 				$('#content').focus();
 				return false;
 			}
 			if($('#bpwd').val()==''){
-				alert('비밀번호를 입력하세요').
+				alert('비밀번호를 입력하세요');
 				$('#bpwd').focus();
 				return false;
 			}
@@ -37,12 +38,7 @@
 	})//$()end-----------------
 </script>
 
-<style>
-	#bpwd, #name, #filename{
-		width:200px;
-	}
 
-</style>
 
 <div align="center" id="bbs" class="col-md-8 offset-md-2">
 	<br><h1 class='text-center mt-5'>게시판 글 편집하기</h1><br>

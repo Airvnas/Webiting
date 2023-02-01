@@ -5,7 +5,7 @@
 
 <c:import url="/top" />
 <c:import url="/adminNavi" />
-
+<link rel="stylesheet" href="/resources/css/board.css">
 
 <script>
 	$(function(){//수정글 유효성 체크
@@ -21,7 +21,7 @@
 				return false;
 			}
 			if($('#content').val()==''){
-				alert('글내용을 입력하세요').
+				alert('글내용을 입력하세요');
 				$('#content').focus();
 				return false;
 			}

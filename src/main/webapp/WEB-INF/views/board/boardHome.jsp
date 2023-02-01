@@ -4,7 +4,7 @@
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
 <c:import url="/top" />
-
+<link rel="stylesheet" href="/resources/css/board.css">
 <%
 String ctx = request.getContextPath();
 %>
@@ -81,39 +81,7 @@ function collapseHide(){//모든 질문의 답이 오픈된 경우 hide!!
 	
 </script>
 
-<style>
-		.panel-heading ~div{
-			font-family:"Glyphicons Halflings";
-			border-bottom: 2px solid #b3b3b3;
-			margin-top:15px;
-			padding:3px;
-				
-		}
-		
-		.panel-heading{
-			margin-top:30px;
-		}
-	
-		.panel-body{
-			background-color:#ebebeb;
-			margin-bottom:5px;
-			padding:10px;
-			border-radius:10px;
-			font-size:15px;
-		}	
-		
-		h4{ font-size:16px;}
-		
-		.btn-list{
-			display:flex;
-			justify-content:center;
-			align-items: center;	
-		}
-		.btn-list button + button{
-			margin-left:40px;		
-		}
-	
-</style>
+
 			
 <div class="container mt-5">
 			<div style="display:inline-block;float:left;margin:10px;padding:10px;border-radius:5px;background-color:#f2f2f2;width:45%;">			
